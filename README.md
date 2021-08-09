@@ -4,11 +4,11 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-**ropenstomata** is an open database of stomatal anatomy synthesized from the primary literature.
+**ropenstomata** is an *R* database of stomatal anatomy synthesized from the primary literature.
 
 ## Installation
 
-To instead install the latest development version of the package from GitHub use
+To install the latest version of the package from GitHub use
 
 ``` r
 # install.packages("remotes")
