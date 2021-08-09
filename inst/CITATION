@@ -1,0 +1,12 @@
+citHeader("To cite ropenstomata in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "ropenstomata: An Open Stomatal Database",
+  author   = "Christopher D. Muir",
+  year     = "2021",
+  url      = "https://github.com/cdmuir/ropenstomata",
+  textVersion = paste(
+    "Muir CD. 2021. ropenstomata: An Open Stomatal Database. https://github.com/cdmuir/ropenstomata."
+  )
+)
