@@ -1,6 +1,6 @@
 #' @title Stomatal anatomy
 #' @description The data set contains stomatal anatomical characters (density, length, width, pore length, and pore width) for the ab- and adaxial leaf surface in a number of species synthesized from the primary literature.
-#' @format A data frame with 5786 rows and 7 variables:
+#' @format A data frame with 5842 rows and 7 variables:
 #' \describe{
 #'   \item{\code{source_id}}{character Taxonomic name give by the source paper.}
 #'   \item{\code{trait}}{character Description of trait.}
@@ -14,7 +14,7 @@
 
 #' @title Stomatal anatomy metadata
 #' @description This contains metadata for stomata_anatomy
-#' @format A data frame with 37 rows and 7 variables:
+#' @format A data frame with 38 rows and 7 variables:
 #' \describe{
 #'   \item{\code{source}}{character Source paper identifier.} 
 #'   \item{\code{taxa}}{character Description of the taxa covered in source.}

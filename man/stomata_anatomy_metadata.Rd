@@ -5,7 +5,7 @@
 \alias{stomata_anatomy_metadata}
 \title{Stomatal anatomy metadata}
 \format{
-A data frame with 37 rows and 7 variables:
+A data frame with 38 rows and 7 variables:
 \describe{
 \item{\code{source}}{character Source paper identifier.}
 \item{\code{taxa}}{character Description of the taxa covered in source.}

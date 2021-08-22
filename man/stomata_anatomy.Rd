@@ -5,7 +5,7 @@
 \alias{stomata_anatomy}
 \title{Stomatal anatomy}
 \format{
-A data frame with 5786 rows and 7 variables:
+A data frame with 5842 rows and 7 variables:
 \describe{
 \item{\code{source_id}}{character Taxonomic name give by the source paper.}
 \item{\code{trait}}{character Description of trait.}
