@@ -39,7 +39,7 @@ stomata_anatomy_metadata
 
 ## Contribute
 
-If you have data you would like to contribute to **ropenstomata**, please contact [Chris Muir](mailto:cdmuir@hawaii.edu).
+If you have data you would like to contribute to **ropenstomata**, please contact [Chris Muir](mailto:cdmuir@wisc.edu).
 
 ## Meta
 

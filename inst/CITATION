@@ -4,9 +4,9 @@ citEntry(
   entry    = "Manual",
   title    = "ropenstomata: An Open Stomatal Database",
   author   = "Christopher D. Muir",
-  year     = "2022",
+  year     = "2024",
   url      = "https://github.com/cdmuir/ropenstomata",
   textVersion = paste(
-    "Muir CD. 2022. ropenstomata: An Open Stomatal Database. https://github.com/cdmuir/ropenstomata."
+    "Muir CD. 2024. ropenstomata: An Open Stomatal Database. https://github.com/cdmuir/ropenstomata."
   )
 )
