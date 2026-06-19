@@ -75,15 +75,25 @@ reported, skip.
 
 ### Xiong & Flexas (2020) — *New Phytologist* ★★★
 
-**Full citation:** Xiong, D., & Flexas, J. (2020). From one side to two sides: the effects of stomatal distribution on photosynthesis. *New Phytologist*, 228, 1754–1766. https://doi.org/10.1111/nph.16801
+**Full citation:** Xiong, D., & Flexas, J. (2020). From one side to two
+sides: the effects of stomatal distribution on photosynthesis. *New
+Phytologist*, 228, 1754–1766. <https://doi.org/10.1111/nph.16801>
 
-**Why high priority:** Reports adaxial and abaxial stomatal density across a large number of species, with adaxial density varying from 0 to 308 stomata mm⁻² and the adaxial:abaxial density ratio varying from 0 to 0.98. Also measures guard cell length alongside stomatal width to calculate stomatal size.
+**Why high priority:** Reports adaxial and abaxial stomatal density
+across a large number of species, with adaxial density varying from 0 to
+308 stomata mm⁻² and the adaxial:abaxial density ratio varying from 0 to
+0.98. Also measures guard cell length alongside stomatal width to
+calculate stomatal size.
 
-**Likely traits:** `adaxial_stomatal_density_mm2`, `abaxial_stomatal_density_mm2`, guard cell length  
+**Likely traits:** `adaxial_stomatal_density_mm2`,
+`abaxial_stomatal_density_mm2`, guard cell length  
 **Suggested source ID:** `xiong_one_2020`  
-**Notes:** Check whether species-level means with SD/SE are provided in a supplementary table, or only species means without replication. Confirm the guard cell length measurement method and comparability with the database convention.
+**Notes:** Check whether species-level means with SD/SE are provided in
+a supplementary table, or only species means without replication.
+Confirm the guard cell length measurement method and its comparability
+with the database convention.
 
----
+------------------------------------------------------------------------
 
 ## Tier 2 — Moderate number of species, both surfaces likely
 
@@ -131,6 +141,73 @@ eudicot species.
 stomatal density on both surfaces appears to have been measured. Check
 for a table or supplementary file with species-level stomatal density
 means and SD/SE. Guard cell length may not be reported.
+
+------------------------------------------------------------------------
+
+### Brench et al. (2026) — *New Phytologist* ★★
+
+**Full citation:** Brench, R.A., Wilson, M.J., Thorne, S.J., Fleming,
+A.J., *et al.* (2026). Was the evolution of faster stomata driven by
+increased gas exchange rates rather than increasing water use
+efficiency? *New Phytologist*. *(confirm DOI)*
+
+**Why promising:** Measures stomatal density and guard cell length on
+both adaxial and abaxial surfaces across plant species spanning
+early-diverging lineages through angiosperms (Asterids, Rosids,
+monocots). Calculates stomatal ratio as adaxial:abaxial density.
+Multi-species evolutionary scope is well aligned with the database.
+
+**Likely traits:** `adaxial_stomatal_density_mm2`,
+`abaxial_stomatal_density_mm2`, guard cell length  
+**Suggested source ID:** `brench_evolution_2026`  
+**Notes:** Confirm the number of species and whether per-species means
+with SD/SE are available. The paper notes early diverging plants are
+often hypostomatous — check that amphistomatous species are sufficiently
+represented to be worth extraction.
+
+------------------------------------------------------------------------
+
+### Zhang et al. (2022) — *Frontiers in Plant Science* ★★
+
+**Full citation:** Zhang, N., Berman, S.R., Joubert, D., *et al.*
+(2022). Variation of photosynthetic induction in major horticultural
+crops is mostly driven by differences in stomatal traits. *Frontiers in
+Plant Science*, 13. *(confirm DOI)*
+
+**Why promising:** Quantifies stomatal density and length on both
+adaxial and abaxial surfaces across 19 genotypes of six horticultural
+crop species. Stomatal ratios are reported as highly conserved across
+most crops.
+
+**Likely traits:** `adaxial_stomatal_density_mm2`,
+`abaxial_stomatal_density_mm2`, guard cell length  
+**Suggested source ID:** `zhang_variation_2022`  
+**Notes:** Check whether species-level or genotype-level means with
+SD/SE are available in a table or supplementary file. The high
+conservation of stomatal ratios may be useful for cross-validation with
+existing database entries.
+
+------------------------------------------------------------------------
+
+### Ayala-Ramos et al. (2024) — *Botanical Sciences* ★★
+
+**Full citation:** Ayala-Ramos, M.A., Montaño-Arias, S.A., & Terrazas,
+T. (2024). Ecological implications of stomatal density and stomatal
+index in the adult stage of *Mimosa* L. (Leguminosae, Caesalpinioideae).
+*(confirm journal and DOI)*
+
+**Why promising:** Measures stomatal density (SD), stomatal index (SI),
+epidermal cell density (ECD), and guard cell length (GCL) on both
+adaxial and abaxial surfaces of leaflets in seven *Mimosa* species,
+correlating traits with 21 climate variables.
+
+**Likely traits:** `adaxial_stomatal_density_mm2`,
+`abaxial_stomatal_density_mm2`, guard cell length  
+**Suggested source ID:** `ayalaramos_ecological_2024`  
+**Notes:** Small sample (7 species) but *Mimosa*/Leguminosae is
+underrepresented in the database. Only *M. affinis* showed significant
+differences between surfaces — confirm that per-species means with SD/SE
+are reported for both surfaces.
 
 ------------------------------------------------------------------------
 
@@ -195,6 +272,101 @@ SD are in a table or supplementary file.
 
 ------------------------------------------------------------------------
 
+### Lei et al. (2023) — *Journal of Experimental Botany*
+
+**Full citation:** Lei, Z., He, Y., Li, X., He, Z., Zhang, Y., *et al.*
+(2023). Domestication has reduced leaf water use efficiency associated
+with the anatomy of abaxial stomata in cotton. *Journal of Experimental
+Botany*. *(confirm DOI)*
+
+**What to check:** Reports adaxial and abaxial stomatal density,
+stomatal size, pore size, and guard cell width in wild and domesticated
+cotton genotypes grown in field conditions. Multiple genotypes of a
+single species.
+
+**Suggested source ID:** `lei_domestication_2023`  
+**Notes:** Single species (*Gossypium* spp.) but includes both wild and
+domesticated accessions. Only worth adding if genotype-level means with
+SD/SE are clearly reported for both surfaces.
+
+------------------------------------------------------------------------
+
+### Al-Salman et al. (2023) — *Plant, Cell & Environment*
+
+**Full citation:** Al-Salman, Y., Cano, F.J., Pan, L., Koller, F., *et
+al.* (2023). Anatomical drivers of stomatal conductance in sorghum lines
+with different leaf widths grown under different temperatures. *Plant,
+Cell & Environment*, 46. *(confirm DOI)*
+
+**What to check:** Measures stomatal density on both adaxial and abaxial
+surfaces of sorghum leaves using confocal microscopy; also calculates
+stomatal size from guard cell dimensions. Multiple sorghum lines across
+temperatures.
+
+**Suggested source ID:** `alsalman_anatomical_2023`  
+**Notes:** Single species (*Sorghum bicolor*). Use the control (optimal)
+temperature condition only. Check whether line-level means with SD/SE
+are available for both surfaces.
+
+------------------------------------------------------------------------
+
+### Jensen et al. (2024) — *Journal of Experimental Botany*
+
+**Full citation:** Bjerring Jensen, N., Vrobel, O., *et al.* (2024).
+Stomatal effects and ABA metabolism mediate differential regulation of
+leaf and flower cooling in tomato cultivars exposed to heat and drought
+stress. *Journal of Experimental Botany*. *(confirm DOI)*
+
+**What to check:** Reports stomatal density and length on both adaxial
+and abaxial leaf surfaces of tomato cultivars under heat and drought
+stress. Multiple cultivars of a single species.
+
+**Suggested source ID:** `jensen_stomatal_2024`  
+**Notes:** Single species (*Solanum lycopersicum*). Use control
+(no-stress) condition only. Confirms adaxial SD was lower than abaxial —
+check that cultivar-level means with SD/SE are available.
+
+------------------------------------------------------------------------
+
+### Chaplin et al. (2026) — *Frontiers in Plant Science*
+
+**Full citation:** Chaplin, E., Tanaka, E., Merchant, A., Sznajder, B.,
+*et al.* (2026). QTLs for heat-induced stomatal anatomy underpin gas
+exchange variation in field-grown wheat. *Frontiers in Plant Science*.
+*(confirm DOI)*
+
+**What to check:** Measures stomatal density and guard cell length (as
+stomatal area proxy) on both adaxial and abaxial surfaces of wheat
+across multiple genotypes in multi-environment field trials over two
+years.
+
+**Suggested source ID:** `chaplin_qtls_2026`  
+**Notes:** Single species (*Triticum aestivum*). Use control
+(non-heat-stressed) time of sowing only. Stomatal area ranges
+1,421–2,602 µm² (abaxial) and 1,396–2,661 µm² (adaxial) — confirm these
+are comparable to the guard cell length convention in the database.
+
+------------------------------------------------------------------------
+
+### Driesen et al. (2023) — *Horticulture Research*
+
+**Full citation:** Driesen, E., De Proft, M., & Saeys, W. (2023).
+Drought stress triggers alterations of adaxial and abaxial stomatal
+development in basil leaves increasing water-use efficiency.
+*Horticulture Research*. *(confirm DOI)*
+
+**What to check:** Measures stomatal density and length on both adaxial
+and abaxial surfaces of basil (*Ocimum basilicum*) under control and
+drought conditions. Finds adaxial stomata are more sensitive to water
+stress.
+
+**Suggested source ID:** `driesen_drought_2023`  
+**Notes:** Single species. Use control (well-watered) condition only.
+Lowest priority in Tier 3 — only worth extracting if the
+control-condition data are clearly tabulated with SD/SE.
+
+------------------------------------------------------------------------
+
 ## Papers to skip
 
 | Paper | Reason |
@@ -206,6 +378,13 @@ SD are in a table or supplementary file.
 | Haworth et al. (2023), *Sci Total Environ* | Likely review/meta-analysis; not primary data |
 | Jalakas et al. (2024), *J Exp Bot* — *Arabidopsis* adaxial/abaxial patterning | Single-species mechanistic study |
 | Watts et al. (2024), *AoB PLANTS* — *Arabidopsis* amphistomy | Single-species patterning study |
+| Pérez-Bueno et al. (2022), *Front Plant Sci* — *Arabidopsis* stomatal density mutants | Single-species mechanistic study |
+| Wei et al. (2025), *Nature Plants* — adaxial/abaxial K⁺ channels in *Arabidopsis* and *Nicotiana* | Single-species molecular study; stomatal measurements incidental |
+| Li et al. (2022), *Environ Exp Bot* — tomato VPD/soil drying | Single species; stomatal size measured from abaxial surface only |
+| Lei et al. (2025), *Ind Crops Prod* — cotton planting density and fluctuating light | Single species, treatment study |
+| Jensen et al. (2023), *Plants* — melatonin in tomato under heat/drought | Single species, treatment study |
+| Woning et al. (2026), *New Phytol* — stomatal size and speed meta-analysis | Meta-analysis; adaxial/abaxial ratio used as a covariate but not primary data |
+| Sun et al. (2021), *Ecol Indic* — stomatal traits in Loess Plateau grassland | Likely the same dataset as Li et al. (2021) already listed — confirm before extracting |
 
 ------------------------------------------------------------------------
 

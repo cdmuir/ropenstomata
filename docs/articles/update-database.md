@@ -97,8 +97,7 @@ from this table to avoid errors.
 | `adaxial_stomatal_area_mm2`    | Upper surface stomatal projected area |
 
 If a paper reports a trait not on this list, leave a note in the `notes`
-column of the metadata tab and contact the package maintainer before
-entering it.
+column of the metadata tab.
 
 ------------------------------------------------------------------------
 
@@ -245,9 +244,9 @@ When you have finished entering all species for a paper:
 1.  Mark the paper as complete in the [Candidate
     Papers](https://cdmuir.github.io/ropenstomata/articles/candidate-papers-2020-2026.md)
     tracking list (or wherever you are keeping track of your progress).
-2.  Send a brief message to the package maintainer noting: the source
-    identifier, the number of species entered, and any issues or
-    uncertainties you flagged.
+2.  Send a brief message to Chris noting: the source identifier, the
+    number of species entered, and any issues or uncertainties you
+    flagged.
 
 ------------------------------------------------------------------------
 
