@@ -19,8 +19,8 @@ Thanks to [Adam Roddy](https://www.adamroddy.com/) for identifying some of these
 To install the latest version of the package from GitHub use
 
 ``` r
-# install.packages("remotes")
-remotes::install_github("cdmuir/ropenstomata")
+# install.packages("pak")
+pak::pak("cdmuir/ropenstomata")
 ```
 
 ## Example

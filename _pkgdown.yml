@@ -1,0 +1,21 @@
+url: https://cdmuir.github.io/ropenstomata/
+
+template:
+  bootstrap: 5
+
+home:
+  links:
+  - text: Browse source code
+    href: https://github.com/cdmuir/ropenstomata
+
+navbar:
+  structure:
+    left: [intro, articles, reference]
+    right: [search, github]
+
+articles:
+- title: Tutorials
+  navbar: Tutorials
+  contents:
+  - update-database
+  - candidate-papers-2020-2026

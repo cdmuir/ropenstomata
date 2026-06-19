@@ -1,0 +1,271 @@
+# Updating the ropenstomata Database
+
+This tutorial explains how to add new papers to the **ropenstomata**
+database. Data entry happens in a shared Google Sheet.
+
+Your job is to find papers, extract the relevant numbers, and enter them
+carefully into the correct columns. The most important things are
+accuracy and consistency — following the naming conventions exactly so
+the data can be merged automatically.
+
+------------------------------------------------------------------------
+
+## 1. The Google Sheet
+
+The shared Google Sheet called `data-template` has two tabs:
+
+- **`data`** — one row per species × trait × source combination (this is
+  the main data entry tab)
+- **`metadata`** — one row per source paper
+
+When you are ready to enter data, copy the template and rename it using
+the [Source Identifier](#source-identifier), delete the default data,
+and enter new data.
+
+------------------------------------------------------------------------
+
+## 2. The `data` Tab
+
+Each row in the `data` tab represents one trait measured in one species
+from one paper. The columns are:
+
+| Column | What to enter |
+|----|----|
+| `source_id` | The taxonomic name **exactly as written in the paper** |
+| `trait` | The trait name from the controlled vocabulary (see [Section 4](#trait-names)) |
+| `mu` | The reported mean value |
+| `n` | The sample size |
+| `sd` | The standard deviation, if reported (leave blank if not) |
+| `se` | The standard error, if reported (leave blank if not) |
+| `source` | The source paper identifier (see [Section 5](#source-identifier)) |
+
+### Example
+
+A paper by Smith et al. (2022) reports the following for two
+*Eucalyptus* species, with means and SDs for both leaf surfaces:
+
+| source_id | trait | mu | n | sd | se | source |
+|----|----|----|----|----|----|----|
+| Eucalyptus globulus | abaxial_stomatal_density_mm2 | 185.3 | 10 | 22.1 |  | smith_stomatal_2022 |
+| Eucalyptus globulus | adaxial_stomatal_density_mm2 | 42.0 | 10 | 8.5 |  | smith_stomatal_2022 |
+| Eucalyptus globulus | abaxial_stomatal_length_um | 24.6 | 10 | 1.8 |  | smith_stomatal_2022 |
+| Eucalyptus globulus | adaxial_stomatal_length_um | 25.1 | 10 | 2.0 |  | smith_stomatal_2022 |
+| Eucalyptus camaldulensis | abaxial_stomatal_density_mm2 | 210.0 | 10 | 30.4 |  | smith_stomatal_2022 |
+| Eucalyptus camaldulensis | adaxial_stomatal_density_mm2 | 55.2 | 10 | 9.1 |  | smith_stomatal_2022 |
+
+------------------------------------------------------------------------
+
+## 3. The `metadata` Tab
+
+Add one row to the `metadata` tab for each new paper. The columns are:
+
+| Column | What to enter |
+|----|----|
+| `source` | The source paper identifier — must match exactly what you used in the `data` tab |
+| `taxa` | A short lowercase description of the taxa in the paper (e.g., `eucalyptus`, `grasses`, `many`) |
+| `location` | Where in the paper the data appear (e.g., `table2`, `appendixS1`, `figureS3`, `authors`) |
+| `density_unit` | The stomatal density unit **as printed in the paper**, before any conversion you did |
+| `length_unit` | The length/width unit **as printed in the paper**, before any conversion |
+| `sample_size` | The approximate number of replicates per species/taxon |
+| `notes` | Anything unusual about the data or how you extracted it |
+
+### Example
+
+| source | taxa | location | density_unit | length_unit | sample_size | notes |
+|----|----|----|----|----|----|----|
+| smith_stomatal_2022 | eucalyptus | table2 | mm^-2 | um | 10 |  |
+
+------------------------------------------------------------------------
+
+## 4. Trait Names
+
+The `trait` column must use **exactly** one of the names below —
+spelling, underscores, and capitalisation all matter. Copy and paste
+from this table to avoid errors.
+
+| Trait name                     | What it means                         |
+|--------------------------------|---------------------------------------|
+| `abaxial_stomatal_density_mm2` | Lower surface stomatal density        |
+| `adaxial_stomatal_density_mm2` | Upper surface stomatal density        |
+| `abaxial_stomatal_length_um`   | Lower surface guard cell length       |
+| `adaxial_stomatal_length_um`   | Upper surface guard cell length       |
+| `abaxial_stomatal_width_um`    | Lower surface guard cell width        |
+| `adaxial_stomatal_width_um`    | Upper surface guard cell width        |
+| `abaxial_pore_length_um`       | Lower surface pore length             |
+| `adaxial_pore_length_um`       | Upper surface pore length             |
+| `abaxial_stomatal_area_mm2`    | Lower surface stomatal projected area |
+| `adaxial_stomatal_area_mm2`    | Upper surface stomatal projected area |
+
+If a paper reports a trait not on this list, leave a note in the `notes`
+column of the metadata tab and contact the package maintainer before
+entering it.
+
+------------------------------------------------------------------------
+
+## 5. Source Identifier
+
+Every paper needs a short identifier that will be used in both the
+`source` column of the data tab and the `source` column of the metadata
+tab. The format is:
+
+    {firstauthor}_{keyword}_{year}
+
+- **firstauthor**: the first author’s last name, all lowercase, no
+  accents or special characters
+- **keyword**: one memorable lowercase word from the title (avoid
+  generic words like “leaf” or “plant”)
+- **year**: four-digit publication year
+
+**Examples:** `yang_large-scale_2014`, `pathare_increased_2020`,
+`baird_how_2023`
+
+If two papers would produce the same identifier, add `-1` to the second
+one (e.g., `stenglein_leaf_2003` and `stenglein_leaf_2003-1`).
+
+------------------------------------------------------------------------
+
+## 6. Selecting a Paper
+
+A paper is worth entering if it:
+
+- Reports stomatal traits for **both leaf surfaces** (adaxial and
+  abaxial) across **multiple species**
+- Has data in a table or supplementary file (not only in figures)
+- Reports at least means and sample sizes — SD or SE is a bonus
+- Measured traits under **ambient or control conditions**, not as part
+  of a treatment
+
+See the [Candidate
+Papers](https://cdmuir.github.io/ropenstomata/articles/candidate-papers-2020-2026.md)
+list for pre-screened suggestions. Before starting on a paper, check
+that its source identifier does not already exist in the `metadata` tab.
+
+### Treatment experiments
+
+Many papers vary CO₂, water, light, or other conditions. You can still
+enter data from these papers, but **only the control/ambient group**.
+Add a note in the `notes` column explaining what “control” means in that
+paper.
+
+------------------------------------------------------------------------
+
+## 7. Units
+
+All values must be converted to standard units before entry — do **not**
+enter raw values if the paper uses different units.
+
+| If the paper reports… | Enter in the `mu` / `sd` / `se` columns… |
+|----|----|
+| Stomata per mm² | as-is |
+| Stomata per cm² | divide by 100 |
+| Guard cell length in µm | as-is |
+| Guard cell length in mm | multiply by 1000 |
+| Guard cell area in µm² | as-is (use the `_area_mm2` trait only if area is in mm²) |
+
+Record the **original unit from the paper** in the `density_unit` and
+`length_unit` columns of the metadata tab. This preserves provenance
+even after conversion.
+
+------------------------------------------------------------------------
+
+## 8. Taxonomic Names
+
+Enter the species name **exactly as it appears in the paper**, including
+any abbreviations or misspellings. Do not update synonyms to accepted
+names — this is handled later. If the paper abbreviates a genus (e.g.,
+“*E. globulus*”), write out the full name.
+
+------------------------------------------------------------------------
+
+## 9. What to Do When Things Are Unclear
+
+- **Paper reports SE, not SD** (or vice versa): enter the value in the
+  correct column (`se` or `sd`) and leave the other blank. Check the
+  paper’s methods — tables sometimes mislabel these.
+- **No measure of variation reported**: leave both `sd` and `se` blank;
+  enter `mu` and `n` only.
+- **Sample size varies by species**: enter the typical value in `n` for
+  each row, and note the variation in the metadata `notes` column.
+- **Data are only in a figure**: skip the paper unless the figure values
+  can be read precisely. If you attempt it, note
+  `"digitized from figure"` in the metadata.
+- **Unsure about a value**: enter your best reading and add a comment to
+  the cell in Google Sheets (Insert → Comment) describing the
+  uncertainty. Do not leave the cell blank if you have a reasonable
+  value.
+
+------------------------------------------------------------------------
+
+## 10. Typical Data Ranges
+
+Use these as a sanity check. If a value you enter falls far outside
+these ranges, double-check the units and the original paper before
+proceeding.
+
+| Trait             | Typical range |
+|-------------------|---------------|
+| Stomatal density  | 10–700 mm⁻²   |
+| Guard cell length | 10–80 µm      |
+| Guard cell width  | 5–40 µm       |
+| Pore length       | 5–50 µm       |
+
+------------------------------------------------------------------------
+
+## 11. Quality Control Checklist
+
+Before moving on to the next paper, check the following in the Google
+Sheet:
+
+All trait names are copied exactly from the list in [Section
+4](#trait-names) — no typos
+
+The `source` value in the data tab matches the `source` in the metadata
+tab exactly
+
+Both adaxial and abaxial rows are present for each trait and species
+(where the paper reports them)
+
+All density values are in mm⁻² and all length values are in µm
+
+`source_id` matches the paper’s own spelling of the species name
+
+`mu` and `n` are filled in for every row
+
+The metadata tab has exactly one row for this paper
+
+`density_unit` and `length_unit` in metadata reflect the **original**
+units from the paper
+
+------------------------------------------------------------------------
+
+## 12. When You Finish a Paper
+
+When you have finished entering all species for a paper:
+
+1.  Mark the paper as complete in the [Candidate
+    Papers](https://cdmuir.github.io/ropenstomata/articles/candidate-papers-2020-2026.md)
+    tracking list (or wherever you are keeping track of your progress).
+2.  Send a brief message to the package maintainer noting: the source
+    identifier, the number of species entered, and any issues or
+    uncertainties you flagged.
+
+------------------------------------------------------------------------
+
+## 13. Known Pitfalls
+
+- **Density units**: Some papers report stomata per cm² in one section
+  and per mm² in another — always check the units in the table header,
+  not just the methods.
+- **Guard cell length vs. pore length**: Some authors use “stomatal
+  length” to mean the length of the pore opening, not the full guard
+  cell. Check the methods for a description or diagram of what was
+  measured.
+- **SE vs. SD confusion**: Mislabelled columns are common. If the
+  reported values seem implausibly small for SD (i.e., smaller than
+  you’d expect for biological variation), it may actually be SE — check
+  the methods.
+- **Hypostomatous species**: If a species has stomata only on the
+  abaxial surface, adaxial rows will simply be absent — do not enter
+  zeros for the adaxial traits.
+- **Duplicate species across papers**: The same species in two different
+  papers is expected and fine. Do not delete duplicates.
