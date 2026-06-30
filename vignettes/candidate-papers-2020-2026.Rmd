@@ -57,6 +57,15 @@ Papers are listed roughly from highest to lowest priority.
 **Suggested source ID:** `xiong_one_2020`  
 **Notes:** Check whether species-level means with SD/SE are provided in a supplementary table, or only species means without replication. Confirm the guard cell length measurement method and its comparability with the database convention.
 
+### Sun et al. (2024) — *Ecological Indicators* ★★★
+
+**Full citation:** Sun, J., et al. (2021). Spatial variation of stomatal morphological traits in grassland plants of the Loess Plateau. *Ecological Indicators*, 228, 1754–1766. <https://doi.org/10.1111/nph.16801>
+
+**Why high priority:** Has adaxial and abaxial density and size
+
+**Likely traits:** `adaxial_stomatal_density_mm2`, `abaxial_stomatal_density_mm2`, guard cell length  
+**Suggested source ID:** `sun_spatial_2021`  
+
 ---
 
 ## Tier 2 — Moderate number of species, both surfaces likely
@@ -231,7 +240,6 @@ These papers report both surfaces for a single species. They add intraspecific v
 | Lei et al. (2025), *Ind Crops Prod* — cotton planting density and fluctuating light | Single species, treatment study |
 | Jensen et al. (2023), *Plants* — melatonin in tomato under heat/drought | Single species, treatment study |
 | Woning et al. (2026), *New Phytol* — stomatal size and speed meta-analysis | Meta-analysis; adaxial/abaxial ratio used as a covariate but not primary data |
-| Sun et al. (2021), *Ecol Indic* — stomatal traits in Loess Plateau grassland | Likely the same dataset as Li et al. (2021) already listed — confirm before extracting |
 
 ---
 
