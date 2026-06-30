@@ -59,7 +59,7 @@ Papers are listed roughly from highest to lowest priority.
 
 ### Sun et al. (2024) — *Ecological Indicators* ★★★
 
-**Full citation:** Sun, J., et al. (2021). Spatial variation of stomatal morphological traits in grassland plants of the Loess Plateau. *Ecological Indicators*, 228, 1754–1766. <https://doi.org/10.1111/nph.16801>
+**Full citation:** Sun, J., et al. (2021). Spatial variation of stomatal morphological traits in grassland plants of the Loess Plateau. *Ecological Indicators*, 128, 107857. <https://doi.org/10.1016/j.ecolind.2021.107857>
 
 **Why high priority:** Has adaxial and abaxial density and size
 
